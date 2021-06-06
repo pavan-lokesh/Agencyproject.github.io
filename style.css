@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.banner{
+
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.85),rgba(0,0,0,0.85)),url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    height: 100px;
+    margin: auto;
+    padding: 35px ,0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 170px;
+    cursor: pointer;
+}
+.navbar ul li{
+
+    display: inline-block;
+    margin: 0px 20px;
+    list-style: none;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+.navbar ul li::after{
+
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background:rgb(255, 115, 0);
+    left: 0px;
+    bottom: -10px;
+    transition: all 0.3s ease;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.container{
+
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.heading{
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 100px;
+    display: flex;
+    text-align: left;
+    height: 100px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.heading span{
+    color: rgb(255, 115, 0);
+}
+.container p span{
+    color: rgb(255, 115, 0);
+
+}
+.container p{
+   line-height: 25px;
+   font-family: sans-serif;
+    
+    font-weight: 100;
+    margin: 25px 0;
+}
+.container .btn{
+
+    padding: 15px 20px;
+    margin: 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border: 2px solid rgb(255, 115, 0);
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(to right , transparent 50%, rgb(255, 115, 0) 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: all 0.8s ease;
+}
+.container .btn:hover{
+    background-position: right;
+    color: #000;
+}
+.slider{
+    box-sizing: border-box;
+    color: rgb(255, 115, 0);
+    margin-left: 17px;
+    animation: slider 6s linear infinite;
+}
+
+@keyframes slider {
+
+    0%{
+        margin-top: -400px;
+    }
+    5%{
+        margin-top: -200px;
+    }
+    30%{
+        margin-top: -200px;
+    }
+    35%{
+        margin-top: 0px;
+
+    }
+    65%{
+        margin-top: 0px;
+
+    }
+    70%{
+        margin-top: 200px;
+
+    }
+    100%{
+        margin-top: 200px;
+
+    }
+    
+}
